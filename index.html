@@ -21,6 +21,7 @@
 		<script type="text/javascript" src="/js/hint.js"></script>
 		<script type="text/javascript" src="/js/wow.min.js"></script>
 		<script src="/js/layer.min.js"></script>
+		<script src='//player.polyv.net/script/polyvplayer.min.js'></script>
 	</head>
 	<body>
 		<!-- header-->
@@ -410,7 +411,7 @@
 						<h3 class="name wow  slideInUp">深圳市合正视觉科技有限公司</h3>
 						<p class="text wow  slideInUp">深圳市合正视觉科技有限公司是深圳市合正汽车电子有限公司旗下子公司。
 							我们公司致力于全天候汽车主动安全辅助技术研发，定位于提供高端车载视觉方案、产品、技术及服务的高科技企业，主营业务为汽车夜视系统、ADAS系统、汽车摄像机等各类汽车视觉技术及产品的研发与销售。</p>
-						<a href="javascript:;" class="videobtn" videosrc="/video/1.mp4"></a>
+						<a href="javascript:;" class="videobtn"></a>
 					</div>
 				</div>
 			</div>
@@ -420,11 +421,19 @@
 		<div class="popup videopopup">
 			<p class="bg"></p>
 			<div class="popupM">
-				<div class="videopopupM">
-					<video controls="controls" autoplay></video>
+				<div class="videopopupM" id="plv_3fe2634a79375342981c6746e82bf0de_3" style="z-index: 2;">
+					<video controls="controls"></video>
 				</div>
 			</div>
 		</div>
+		<script>
+		var player = polyvObject('#plv_3fe2634a79375342981c6746e82bf0de_3').videoPlayer({
+			'width':'970',
+		'height':'546',
+			'vid' : '3fe2634a79375342981c6746e82bf0de_3' ,
+		'forceH5':true 
+		});
+		</script>
 		<!--{foot begin-->
 		<footer class="footer">
 			<div class="Displayfoot">
